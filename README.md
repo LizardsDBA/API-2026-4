@@ -41,29 +41,18 @@ A plataforma automatiza a ingestão de bases de dados geográficas e tabulares p
 ### Tabela – Product Backlog Geral
 | Rank | Prioridade | User Story | Estimativa (SP) | Sprint |
 | :---: | :---: | :--- | :---: | :---: |
-| **1** | Alta | **US01 (Catalogação de Fontes)**: Como Operador de Dados, quero cadastrar as fontes dos dados ambientais para identificar a origem das informações utilizadas nos indicadores. | 3 | 1 |
-| **2** | Alta | **US02 (Catalogação de Conjuntos)**: Como Operador de Dados, quero cadastrar os conjuntos fornecidos por cada fonte para organizar suas competências, coberturas e características geográficas. | 5 | 1 |
-| **3** | Alta | **US03 (Importação)**: Como Operador de Dados, quero importar conjuntos de dados ambientais para iniciar seu processamento na plataforma. | 8 | 1 |
-| **4** | Alta | **US04 (Validação)**: Como Analista Socioambiental, quero que os dados importados sejam validados para evitar o uso de registros inconsistentes nos indicadores ambientais. | 8 | 1 |
-| **5** | Alta | **US05 (Diagnóstico de Rejeições)**: Como Operador de Dados, quero consultar os registros rejeitados e seus respectivos problemas para diagnosticar falhas de qualidade nos conjuntos recebidos. | 5 | 1 |
-| **6** | Média | **US06 (Reprocessamento)**: Como Operador de Dados, quero reprocessar dados corrigidos para incorporá-los ao fluxo sem perder o histórico das rejeições anteriores. | 5 | 2 |
-| **7** | Alta | **US07 (Monitoramento de Cargas)**: Como Operador de Dados, quero acompanhar o andamento das cargas e dos cálculos para identificar falhas e verificar quando os resultados estiverem concluídos. | 8 | 2 |
-| **8** | Alta | **US08 (Cobertura Vegetal)**: Como Analista Socioambiental, quero consultar a cobertura vegetal nativa de um imóvel para avaliar sua proporção de vegetação preservada. | 8 | 2 |
-| **9** | Alta | **US09 (Reserva Legal)**: Como Analista Socioambiental, quero consultar a situação da Reserva Legal de um imóvel para identificar déficit ou excedente em relação ao mínimo aplicável. | 8 | 2 |
-| **10** | Alta | **US10 (APP)**: Como Analista Socioambiental, quero consultar a conservação das Áreas de Preservação Permanente de um imóvel para identificar áreas que necessitam de recuperação. | 8 | 2 |
-| **11** | Alta | **US11 (Áreas Protegidas)**: Como Analista Socioambiental, quero identificar sobreposições do imóvel com áreas protegidas para reconhecer restrições territoriais relevantes. | 8 | 2 |
-| **12** | Alta | **US12 (Áreas Embargadas)**: Como Analista Socioambiental, quero identificar sobreposições do imóvel com áreas embargadas para reconhecer restrições ambientais associadas à propriedade. | 5 | 2 |
-| **13** | Alta | **US13 (Desmatamento)**: Como Analista Socioambiental, quero consultar as áreas de desmatamento sobrepostas ao imóvel para avaliar alterações da cobertura ambiental nos períodos analisados. | 8 | 2 |
-| **14** | Alta | **US14 (Focos de Calor)**: Como Analista Socioambiental, quero consultar a incidência de focos de calor no imóvel para identificar ocorrências relacionadas a queimadas. | 5 | 2 |
-| **15** | Alta | **US15 (Consolidação de Versão)**: Como Operador de Dados, quero consolidar os resultados aprovados em uma nova versão para preservar o histórico de cada processamento concluído. | 8 | 3 |
-| **16** | Alta | **US16 (Publicação)**: Como Operador de Dados, quero publicar uma versão aprovada dos indicadores para disponibilizar resultados confiáveis para consulta. | 5 | 3 |
-| **17** | Alta | **US17 (Visualização por Imóvel)**: Como Gestor, quero consultar os indicadores ambientais de um imóvel em mapas, tabelas e gráficos para apoiar sua avaliação socioambiental. | 13 | 3 |
-| **18** | Alta | **US18 (Visualização por Município)**: Como Gestor, quero consultar os indicadores consolidados por município para analisar a situação ambiental de diferentes regiões do Paraná. | 8 | 3 |
-| **19** | Alta | **US19 (Comparação de Versões)**: Como Gestor, quero comparar versões dos indicadores de um mesmo imóvel para identificar as alterações ocorridas entre diferentes processamentos. | 8 | 3 |
-| **20** | Alta | **US20 (Rastreabilidade)**: Como Auditor, quero rastrear um indicador publicado até os dados, transformações e regras utilizados para comprovar sua origem e permitir sua reprodução. | 13 | 3 |
-| **21** | Alta | **US21 (Histórico de Operações)**: Como Auditor, quero consultar o histórico das operações realizadas na plataforma para verificar os responsáveis e a conformidade dos processos. | 8 | 3 |
-| **22** | Alta | **US22 (Integração via API)**: Como Responsável por Integrações, quero consultar os resultados publicados por API para disponibilizá-los em outras aplicações autorizadas. | 8 | 3 |
-| **23** | Média | **US23 (Download de Resultados)**: Como Analista Socioambiental, quero baixar os resultados publicados para utilizá-los em análises complementares. | 5 | 3 |
+| **1** | Alta | **US01 (Catalogação de Dados)**: Como Operador de Dados, quero catalogar as fontes oficiais e seus respectivos conjuntos de dados para identificar a origem, a competência e as características das informações utilizadas nos indicadores. | 5 | 1 |
+| **2** | Alta | **US02 (Importação de Dados)**: Como Operador de Dados, quero importar conjuntos de dados ambientais para iniciar seu processamento e preservar as informações originalmente recebidas. | 8 | 1 |
+| **3** | Alta | **US03 (Controle de Qualidade)**: Como Operador de Dados, quero validar os dados importados e consultar os registros rejeitados para corrigir problemas de qualidade antes do cálculo dos indicadores. | 8 | 1 |
+| **4** | Alta | **US04 (Monitoramento de Processamentos)**: Como Operador de Dados, quero acompanhar o andamento das cargas e dos cálculos para identificar falhas e verificar a conclusão dos processamentos. | 5 | 1 |
+| **5** | Alta | **US05 (Indicadores de Conservação)**: Como Analista Socioambiental, quero consultar os indicadores de conservação de um imóvel para avaliar sua cobertura vegetal, sua Reserva Legal e suas Áreas de Preservação Permanente. | 8 | 2 |
+| **6** | Alta | **US06 (Restrições Territoriais)**: Como Analista Socioambiental, quero identificar sobreposições do imóvel com áreas protegidas e embargadas para reconhecer restrições ambientais associadas à propriedade. | 8 | 2 |
+| **7** | Alta | **US07 (Eventos Ambientais)**: Como Analista Socioambiental, quero consultar ocorrências de desmatamento e focos de calor no imóvel para identificar eventos ambientais nos períodos analisados. | 8 | 2 |
+| **8** | Alta | **US08 (Versionamento e Publicação)**: Como Operador de Dados, quero consolidar e publicar uma versão aprovada dos resultados para disponibilizar indicadores confiáveis sem perder o histórico dos processamentos anteriores. | 8 | 2 |
+| **9** | Alta | **US09 (Consulta de Indicadores)**: Como Gestor, quero consultar os indicadores ambientais publicados por imóvel e por município para apoiar a avaliação socioambiental de propriedades e regiões do Paraná. | 8 | 3 |
+| **10** | Média | **US10 (Comparação de Versões)**: Como Gestor, quero comparar versões dos indicadores de um mesmo imóvel para identificar alterações entre diferentes competências e processamentos. | 5 | 3 |
+| **11** | Alta | **US11 (Auditoria e Rastreabilidade)**: Como Auditor, quero rastrear os resultados publicados e consultar as operações que os originaram para comprovar sua procedência, integridade e responsabilidade. | 8 | 3 |
+| **12** | Média | **US12 (Integração via API)**: Como Responsável por Integrações, quero consultar os resultados publicados por API para disponibilizá-los em outras aplicações autorizadas. | 5 | 3 |
 
 ---
 
