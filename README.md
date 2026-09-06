@@ -39,17 +39,31 @@ A plataforma automatiza a ingestão de bases de dados geográficas e tabulares p
 ## Backlog do Produto
 
 ### Tabela – Product Backlog Geral
-| Rank | Prioridade | User Story (Fórmula Estrita da FATEC SJC) | Estimativa (SP) | Sprint |
+| Rank | Prioridade | User Story | Estimativa (SP) | Sprint |
 | :---: | :---: | :--- | :---: | :---: |
-| **1** | Alta | **US01 (Catalogação)**: Como Operador de Ingestão, quero registrar as fontes oficiais de dados ambientais no sistema, para que a equipe saiba a origem confiável e a vigência temporal de cada informação. | 3 | 1 |
-| **2** | Alta | **US02 (Importação)**: Como Operador de Ingestão, quero carregar na plataforma os arquivos de limites territoriais das propriedades rurais fornecidos pelos órgãos públicos, para disponibilizar esses dados para as análises socioambientais. | 5 | 1 |
-| **3** | Alta | **US03 (Triagem)**: Como Analista Socioambiental, quero que o sistema separe automaticamente dados inválidos ou incompletos enviados pelas fontes públicas, para evitar que erros de preenchimento distorçam as análises de conformidade. | 8 | 1 |
-| **4** | Média | **US04 (Quarentena)**: Como Analista Socioambiental, quero visualizar detalhadamente os registros que falharam na triagem automática com o motivo específico de sua reprovação, para diagnosticar inconsistências recorrentes dos órgãos emissores. | 5 | 2 |
-| **5** | Alta | **US05 (Análise Espacial)**: Como Analista Socioambiental, quero identificar se o limite geográfico do imóvel rural invade terras protegidas ou desrespeita áreas de preservação permanente e de reserva legal, para apontar passivos ecológicos imediatos. | 8 | 2 |
-| **6** | Alta | **US06 (Alerta de Restrições)**: Como Analista Socioambiental, quero cruzar as informações de identificação dos proprietários rurais com a listagem de infrações trabalhistas graves, para gerar alertas de violações aos direitos humanos associadas à propriedade. | 3 | 3 |
-| **7** | Média | **US07 (Parecer de Crédito)**: Como Gestor de Crédito, quero visualizar em mapas e gráficos os indicadores ambientais consolidados e as sobreposições territoriais de um imóvel rural, para avaliar com rapidez o risco de conceder financiamentos ao produtor. | 8 | 3 |
-| **8** | Média | **US08 (Comparação de Histórico)**: Como Gestor de Crédito, quero comparar os indicadores de um mesmo imóvel entre datas de publicação distintas, para verificar se houve melhora ou piora nas práticas ecológicas do produtor ao longo do tempo. | 5 | 4 |
-| **9** | Baixa | **US09 (Linhagem e Auditoria)**: Como Auditor Interno, quero reconstituir visualmente o fluxo histórico de um indicador publicado até a sua carga bruta original, para comprovar a integridade jurídica das análises em fiscalizações ou disputas. | 8 | 4 |
+| **1** | Alta | **US01 (Catalogação de Fontes)**: Como Operador de Dados, quero cadastrar as fontes dos dados ambientais para identificar a origem das informações utilizadas nos indicadores. | 3 | 1 |
+| **2** | Alta | **US02 (Catalogação de Conjuntos)**: Como Operador de Dados, quero cadastrar os conjuntos fornecidos por cada fonte para organizar suas competências, coberturas e características geográficas. | 5 | 1 |
+| **3** | Alta | **US03 (Importação)**: Como Operador de Dados, quero importar conjuntos de dados ambientais para iniciar seu processamento na plataforma. | 8 | 1 |
+| **4** | Alta | **US04 (Validação)**: Como Analista Socioambiental, quero que os dados importados sejam validados para evitar o uso de registros inconsistentes nos indicadores ambientais. | 8 | 1 |
+| **5** | Alta | **US05 (Diagnóstico de Rejeições)**: Como Operador de Dados, quero consultar os registros rejeitados e seus respectivos problemas para diagnosticar falhas de qualidade nos conjuntos recebidos. | 5 | 1 |
+| **6** | Média | **US06 (Reprocessamento)**: Como Operador de Dados, quero reprocessar dados corrigidos para incorporá-los ao fluxo sem perder o histórico das rejeições anteriores. | 5 | 2 |
+| **7** | Alta | **US07 (Monitoramento de Cargas)**: Como Operador de Dados, quero acompanhar o andamento das cargas e dos cálculos para identificar falhas e verificar quando os resultados estiverem concluídos. | 8 | 2 |
+| **8** | Alta | **US08 (Cobertura Vegetal)**: Como Analista Socioambiental, quero consultar a cobertura vegetal nativa de um imóvel para avaliar sua proporção de vegetação preservada. | 8 | 2 |
+| **9** | Alta | **US09 (Reserva Legal)**: Como Analista Socioambiental, quero consultar a situação da Reserva Legal de um imóvel para identificar déficit ou excedente em relação ao mínimo aplicável. | 8 | 2 |
+| **10** | Alta | **US10 (APP)**: Como Analista Socioambiental, quero consultar a conservação das Áreas de Preservação Permanente de um imóvel para identificar áreas que necessitam de recuperação. | 8 | 2 |
+| **11** | Alta | **US11 (Áreas Protegidas)**: Como Analista Socioambiental, quero identificar sobreposições do imóvel com áreas protegidas para reconhecer restrições territoriais relevantes. | 8 | 2 |
+| **12** | Alta | **US12 (Áreas Embargadas)**: Como Analista Socioambiental, quero identificar sobreposições do imóvel com áreas embargadas para reconhecer restrições ambientais associadas à propriedade. | 5 | 2 |
+| **13** | Alta | **US13 (Desmatamento)**: Como Analista Socioambiental, quero consultar as áreas de desmatamento sobrepostas ao imóvel para avaliar alterações da cobertura ambiental nos períodos analisados. | 8 | 2 |
+| **14** | Alta | **US14 (Focos de Calor)**: Como Analista Socioambiental, quero consultar a incidência de focos de calor no imóvel para identificar ocorrências relacionadas a queimadas. | 5 | 2 |
+| **15** | Alta | **US15 (Consolidação de Versão)**: Como Operador de Dados, quero consolidar os resultados aprovados em uma nova versão para preservar o histórico de cada processamento concluído. | 8 | 3 |
+| **16** | Alta | **US16 (Publicação)**: Como Operador de Dados, quero publicar uma versão aprovada dos indicadores para disponibilizar resultados confiáveis para consulta. | 5 | 3 |
+| **17** | Alta | **US17 (Visualização por Imóvel)**: Como Gestor, quero consultar os indicadores ambientais de um imóvel em mapas, tabelas e gráficos para apoiar sua avaliação socioambiental. | 13 | 3 |
+| **18** | Alta | **US18 (Visualização por Município)**: Como Gestor, quero consultar os indicadores consolidados por município para analisar a situação ambiental de diferentes regiões do Paraná. | 8 | 3 |
+| **19** | Alta | **US19 (Comparação de Versões)**: Como Gestor, quero comparar versões dos indicadores de um mesmo imóvel para identificar as alterações ocorridas entre diferentes processamentos. | 8 | 3 |
+| **20** | Alta | **US20 (Rastreabilidade)**: Como Auditor, quero rastrear um indicador publicado até os dados, transformações e regras utilizados para comprovar sua origem e permitir sua reprodução. | 13 | 3 |
+| **21** | Alta | **US21 (Histórico de Operações)**: Como Auditor, quero consultar o histórico das operações realizadas na plataforma para verificar os responsáveis e a conformidade dos processos. | 8 | 3 |
+| **22** | Alta | **US22 (Integração via API)**: Como Responsável por Integrações, quero consultar os resultados publicados por API para disponibilizá-los em outras aplicações autorizadas. | 8 | 3 |
+| **23** | Média | **US23 (Download de Resultados)**: Como Analista Socioambiental, quero baixar os resultados publicados para utilizá-los em análises complementares. | 5 | 3 |
 
 ---
 
@@ -72,7 +86,7 @@ Uma User Story só é considerada finalizada ("Pronta") se atender a todos os cr
 * [ ] **Backend (Spring Boot)**: APIs REST documentadas e integradas ao banco.
 * [ ] **Frontend (Vue.js)**: Telas responsivas implementadas conforme wireframes, integradas com Axios, Leaflet e Chart.js.
 * [ ] **Versionamento & Git**: Branch de funcionalidade (`feat/`) criada e Pull Request (PR) aberto e revisado por outro par.
-* [ ] **Qualidade de Código**: Código livre de fragmentos comentados e lixo tecnológico.
+* [ ] **Qualidade de Código**: Código livre de fragmentos comentados.
 * [ ] **Cobertura de Testes**: Testes de unidade com **cobertura mínima de 70%** e testes de pipeline funcionando.
 
 ---
@@ -88,7 +102,7 @@ Uma User Story só é considerada finalizada ("Pronta") se atender a todos os cr
 | 🔴 **SPRINT 2 REVIEW/PLANNING** | 26/10 - 30/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
 | 🔴 **SPRINT 3** | 02/11 - 22/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
 | 🔴 **SPRINT 3 REVIEW/PLANNING** | 23/11 - 27/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
-| 🔴 **FEIRA DE SOLUÇÕES** | 03/12 | [ Feira de solucoes ] |
+| 🔴 **FEIRA DE SOLUÇÕES** | 03/12 | [ Feira de soluções ] |
 
 
 ---
@@ -128,19 +142,22 @@ Uma User Story só é considerada finalizada ("Pronta") se atender a todos os cr
     <th>Foto</th>
   </tr>
   <tr>
-    <td>Fagner Nascimento</td>
+    <td>Lucas Castro</td>
     <td>Product Owner</td>
-    <td><a href="https://github.com/fagnerlouis"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-    <td><a href="https://www.linkedin.com/in/fagnerlouis"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    <td><img src="docs/assets/pfp_fagner.jpeg" alt="Foto Fagner" width="90"></td>
+    <td><a href="https://github.com/stlucass"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+    <td><a href="https://www.linkedin.com/in/lucas-castro-39a427285"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    <td><img src="docs/assets/pfp_lucas.png" alt="Foto Lucas" width="90"></td>
   </tr>
   <tr>
-    <td>Flávio Pereira</td>
+    <td>Brenda Bettini</td>
     <td>Scrum Master</td>
-    <td><a href="https://github.com/jnr98"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-    <td><a href="https://www.linkedin.com/in/flavjuni"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    <td><img src="docs/assets/pfp_flavio.jpeg" alt="Foto Flavio" width="90"></td>
-  </tr>  
+    <td><a href="https://github.com/brendabettini"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+    <td><a href="https://www.linkedin.com/in/brendabettini/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    <td><img src="docs/assets/pfp_brenda.jpeg" alt="Foto Brenda" width="90">
+  </td>
+  </tr> 
+  <tr>
+  <tr>
   <tr>
     <td>Benjamin Marques</td>
     <td>Desenvolvedor</td>
@@ -148,29 +165,26 @@ Uma User Story só é considerada finalizada ("Pronta") se atender a todos os cr
     <td><a href="https://www.linkedin.com/in/benjamin-marques-48a4bb359"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     <td><img src="docs/assets/pfp_benjamin.jpeg" alt="Foto Benjamin" width="90"></td>
   </tr>  
-  <tr>
-    <td>Brenda Bettini</td>
-    <td>Desenvolvedor</td>
-    <td><a href="https://github.com/brendabettini"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-    <td><a href="https://www.linkedin.com/in/brendabettini/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    <td><img src="docs/assets/pfp_brenda.jpeg" alt="Foto Brenda" width="90">
-  </td>
-  </tr> 
     <tr>
     <td>Cauã Mohor</td>
     <td>Desenvolvedor</td>
     <td><a href="https://github.com/CauaDK"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
     <td><a href="https://www.linkedin.com/in/cauã-mohor-pardini"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     <td><img src="docs/assets/pfp_caua.jpeg" alt="Foto Caua" width="90"></td>
-  </tr> 
-  <tr>
-    <td>Lucas Castro</td>
+  </tr>
+<td>Fagner Nascimento</td>
     <td>Desenvolvedor</td>
-    <td><a href="https://github.com/stlucass"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-    <td><a href="https://www.linkedin.com/in/lucas-castro-39a427285"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    <td><img src="docs/assets/pfp_lucas.png" alt="Foto Lucas" width="90"></td>
+    <td><a href="https://github.com/fagnerlouis"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+    <td><a href="https://www.linkedin.com/in/fagnerlouis"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    <td><img src="docs/assets/pfp_fagner.jpeg" alt="Foto Fagner" width="90"></td>
   </tr>
   <tr>
+    <td>Flávio Pereira</td>
+    <td>Desenvolvedor</td>
+    <td><a href="https://github.com/jnr98"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+    <td><a href="https://www.linkedin.com/in/flavjuni"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+    <td><img src="docs/assets/pfp_flavio.jpeg" alt="Foto Flavio" width="90"></td>
+  </tr>  
     <td>Luiz Gustavo</td>
     <td>Desenvolvedor</td>
     <td><a href="https://github.com/oliveiraluizgustavo"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
