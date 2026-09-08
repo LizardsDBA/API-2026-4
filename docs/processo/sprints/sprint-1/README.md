@@ -6,26 +6,39 @@
 
 ## Desafio 
 
-
+| Capacidade estimada da equipe por sprint |
+| --- |
+| 32 Story points |
 ## Sprint Goal
 
+| Meta da sprint | Previsão da sprint |
+| --- | --- |
+| User stories de rank 1, 2, 3 e 4 (26 story points) | User story de rank 5 (8 story points) |
 
 ## Backlog da Sprint 1
+
+| Rank | Prioridade | User Story | Estimativa (SP) |
+| :---: | :---: | :--- | :---: |
+| **1** | Alta | **US01 (Catalogação de Dados)**: Como Operador de Dados, quero catalogar as fontes oficiais e seus respectivos conjuntos de dados para identificar a origem, a competência e as características das informações utilizadas nos indicadores. | 5 |
+| **2** | Alta | **US02 (Importação de Dados)**: Como Operador de Dados, quero importar conjuntos de dados ambientais para iniciar seu processamento e preservar as informações originalmente recebidas. | 8 |
+| **3** | Alta | **US03 (Controle de Qualidade)**: Como Operador de Dados, quero validar os dados importados e consultar os registros rejeitados para corrigir problemas de qualidade antes do cálculo dos indicadores. | 8 |
+| **4** | Alta | **US04 (Monitoramento de Processamentos)**: Como Operador de Dados, quero acompanhar o andamento das cargas e dos cálculos para identificar falhas e verificar a conclusão dos processamentos. | 5 |
+
+---
 
 ## Burndown da Sprint 1 
 
 
-# DoR - Definition of Ready – Sprint 1
-
-## Requisitos Gerais
-
----
-
-## US0X – 
-
-| Critério                      | Descrição                                                           |
-| :---------------------------- | :------------------------------------------------------------------ |
-| X         | X.   |
+## DoR - Definition of Ready – Sprint 1
+Para que uma User Story seja considerada pronta para desenvolvimento, ela deve cumprir o checklist acordado:
+* [ ] **História Descrita**: A história tem um título claro e seu objetivo de negócio é plenamente compreendido.
+* [ ] **Critérios de Aceitação**: Todos os critérios de aceitação foram detalhados e acordados com o time.
+* [ ] **Insumos de Homologação**: Amostras reais de dados das fontes de imóveis rurais (CAR) e tabelas secundárias estão disponíveis.
+* [ ] **Modelo de Dados**: O diagrama relacional da camada de dados envolvida está desenhado e homologado pelo DBA.
+* [ ] **Estimativa Realizada**: O esforço de desenvolvimento foi estimado e pontuado em Story Points pela equipe.
+* [ ] **Sem Dependências Bloqueadoras**: A User Story não depende de outra ainda não concluída ou não iniciada.
+* [ ] **Compreensão Validada com o Time**: A Equipe discutiu a história coletivamente e confirma entendimento comum do escopo.
+* [ ] **Estratégia de Testes Definida**: Os cenários de teste (unidade e, quando aplicável, integração) foram definidos previamente, alinhados à cobertura mínima exigida.
 
 ---
 
