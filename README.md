@@ -45,14 +45,14 @@ A plataforma automatiza a ingestão de bases de dados geográficas e tabulares p
 | **2** | Alta | **US02 (Importação de Dados)**: Como Operador de Dados, quero importar conjuntos de dados ambientais para iniciar seu processamento e preservar as informações originalmente recebidas. | 8 | 1 |
 | **3** | Alta | **US03 (Controle de Qualidade)**: Como Operador de Dados, quero validar os dados importados e consultar os registros rejeitados para corrigir problemas de qualidade antes do cálculo dos indicadores. | 8 | 1 |
 | **4** | Alta | **US04 (Monitoramento de Processamentos)**: Como Operador de Dados, quero acompanhar o andamento das cargas e dos cálculos para identificar falhas e verificar a conclusão dos processamentos. | 5 | 1 |
-| **5** | Alta | **US05 (Indicadores de Conservação)**: Como Analista Socioambiental, quero consultar os indicadores de conservação de um imóvel para avaliar sua cobertura vegetal, sua Reserva Legal e suas Áreas de Preservação Permanente. | 8 | 2 |
-| **6** | Alta | **US06 (Restrições Territoriais)**: Como Analista Socioambiental, quero identificar sobreposições do imóvel com áreas protegidas e embargadas para reconhecer restrições ambientais associadas à propriedade. | 8 | 2 |
-| **7** | Alta | **US07 (Eventos Ambientais)**: Como Analista Socioambiental, quero consultar ocorrências de desmatamento e focos de calor no imóvel para identificar eventos ambientais nos períodos analisados. | 8 | 2 |
-| **8** | Alta | **US08 (Versionamento e Publicação)**: Como Operador de Dados, quero consolidar e publicar uma versão aprovada dos resultados para disponibilizar indicadores confiáveis sem perder o histórico dos processamentos anteriores. | 8 | 2 |
-| **9** | Alta | **US09 (Consulta de Indicadores)**: Como Gestor, quero consultar os indicadores ambientais publicados por imóvel e por município para apoiar a avaliação socioambiental de propriedades e regiões do Paraná. | 8 | 3 |
-| **10** | Média | **US10 (Comparação de Versões)**: Como Gestor, quero comparar versões dos indicadores de um mesmo imóvel para identificar alterações entre diferentes competências e processamentos. | 5 | 3 |
-| **11** | Alta | **US11 (Auditoria e Rastreabilidade)**: Como Auditor, quero rastrear os resultados publicados e consultar as operações que os originaram para comprovar sua procedência, integridade e responsabilidade. | 8 | 3 |
-| **12** | Média | **US12 (Integração via API)**: Como Responsável por Integrações, quero consultar os resultados publicados por API para disponibilizá-los em outras aplicações autorizadas. | 5 | 3 |
+| **5** | Média | **US05 (Indicadores de Conservação)**: Como Analista Socioambiental, quero consultar os indicadores de conservação de um imóvel para avaliar sua cobertura vegetal, sua Reserva Legal e suas Áreas de Preservação Permanente. | 8 | 2 |
+| **6** | Média | **US06 (Restrições Territoriais)**: Como Analista Socioambiental, quero identificar sobreposições do imóvel com áreas protegidas e embargadas para reconhecer restrições ambientais associadas à propriedade. | 8 | 2 |
+| **7** | Média | **US07 (Eventos Ambientais)**: Como Analista Socioambiental, quero consultar ocorrências de desmatamento e focos de calor no imóvel para identificar eventos ambientais nos períodos analisados. | 8 | 2 |
+| **8** | Média | **US08 (Versionamento e Publicação)**: Como Operador de Dados, quero consolidar e publicar uma versão aprovada dos resultados para disponibilizar indicadores confiáveis sem perder o histórico dos processamentos anteriores. | 8 | 2 |
+| **9** | Baixa | **US09 (Consulta de Indicadores)**: Como Gestor, quero consultar os indicadores ambientais publicados por imóvel e por município para apoiar a avaliação socioambiental de propriedades e regiões do Paraná. | 8 | 3 |
+| **10** | Baixa | **US10 (Comparação de Versões)**: Como Gestor, quero comparar versões dos indicadores de um mesmo imóvel para identificar alterações entre diferentes competências e processamentos. | 5 | 3 |
+| **11** | Baixa | **US11 (Auditoria e Rastreabilidade)**: Como Auditor, quero rastrear os resultados publicados e consultar as operações que os originaram para comprovar sua procedência, integridade e responsabilidade. | 8 | 3 |
+| **12** | Baixa | **US12 (Integração via API)**: Como Responsável por Integrações, quero consultar os resultados publicados por API para disponibilizá-los em outras aplicações autorizadas. | 5 | 3 |
 
 ---
 
