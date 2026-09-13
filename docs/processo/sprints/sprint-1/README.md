@@ -3,12 +3,14 @@
 # Documentação - Sprint 1
 <p align="center">
       <img src="/docs/assets/logo_lizards.jpeg" alt="logo LizardsDBA" width="200">
+</p>
 
 ## Desafio 
 
 | Capacidade estimada da equipe por sprint |
 | --- |
 | 32 Story points |
+
 ## Sprint Goal
 
 | Meta da sprint | Previsão da sprint |
@@ -28,17 +30,90 @@
 
 ## Burndown da Sprint 1 
 
+---
 
-## DoR - Definition of Ready – Sprint 1
-Para que uma User Story seja considerada pronta para desenvolvimento, ela deve cumprir o checklist acordado:
-* [ ] **História Descrita**: A história tem um título claro e seu objetivo de negócio é plenamente compreendido.
-* [ ] **Critérios de Aceitação**: Todos os critérios de aceitação foram detalhados e acordados com o time.
-* [ ] **Insumos de Homologação**: Amostras reais de dados das fontes de imóveis rurais (CAR) e tabelas secundárias estão disponíveis.
-* [ ] **Modelo de Dados**: O diagrama relacional da camada de dados envolvida está desenhado e homologado pelo DBA.
-* [ ] **Estimativa Realizada**: O esforço de desenvolvimento foi estimado e pontuado em Story Points pela equipe.
-* [ ] **Sem Dependências Bloqueadoras**: A User Story não depende de outra ainda não concluída ou não iniciada.
-* [ ] **Compreensão Validada com o Time**: A Equipe discutiu a história coletivamente e confirma entendimento comum do escopo.
-* [ ] **Estratégia de Testes Definida**: Os cenários de teste (unidade e, quando aplicável, integração) foram definidos previamente, alinhados à cobertura mínima exigida.
+## DoR e DoD por User Story – Sprint 1
+
+### US01 (Catalogação de Dados)
+**DoR - Definition of Ready**
+* [ ] **História Descrita:** A história tem um título claro e seu objetivo de negócio é plenamente compreendido.
+* [ ] **Critérios de Aceitação:** Todos os critérios de aceitação foram detalhados e acordados com o time.
+* [ ] **Insumos de Homologação:** Informações e metadados das fontes oficiais (ex: CAR, IBGE, INPE) a serem catalogadas estão disponíveis.
+* [ ] **Modelo de Dados:** O diagrama relacional contendo a tabela `FONTE_DADO` está desenhado e homologado pelo DBA.
+* [ ] **Estimativa Realizada:** O esforço de desenvolvimento foi estimado e pontuado em Story Points pela equipe.
+* [ ] **Sem Dependências Bloqueadoras:** A User Story não depende de outra ainda não concluída ou não iniciada.
+* [ ] **Compreensão Validada com o Time:** A Equipe discutiu a história coletivamente e confirma entendimento comum do escopo.
+* [ ] **Estratégia de Testes Definida:** Os cenários de teste (unidade e, quando aplicável, integração) foram definidos previamente, alinhados à cobertura mínima exigida.
+
+**DoD - Definition of Done**
+* [ ] **Estrutura de Banco (Oracle):** Tabela de catálogo (`FONTE_DADO`) implantada na Oracle Cloud, com constraints e rotinas PL/SQL testadas.
+* [ ] **Backend (Spring Boot):** APIs REST de catálogo documentadas e integradas ao banco.
+* [ ] **Frontend (Vue.js):** Tela de "Conjuntos de dados" responsiva implementada conforme wireframes.
+* [ ] **Versionamento & Git:** Branch de funcionalidade (`feat/`) criada e Pull Request (PR) aberto e revisado por outro par.
+* [ ] **Qualidade de Código:** Código livre de fragmentos comentados.
+* [ ] **Cobertura de Testes:** Testes de unidade com cobertura mínima de 70% e testes de pipeline funcionando.
+
+---
+
+### US02 (Importação de Dados)
+**DoR - Definition of Ready**
+* [ ] **História Descrita:** A história tem um título claro e seu objetivo de negócio é plenamente compreendido.
+* [ ] **Critérios de Aceitação:** Todos os critérios de aceitação foram detalhados e acordados com o time.
+* [ ] **Insumos de Homologação:** Amostras reais de dados de limites territoriais rurais em formatos CSV, JSON e GeoJSON estão disponíveis.
+* [ ] **Modelo de Dados:** O diagrama relacional da Zona Bruta está desenhado e homologado pelo DBA.
+* [ ] **Estimativa Realizada:** O esforço de desenvolvimento foi estimado e pontuado em Story Points pela equipe.
+* [ ] **Sem Dependências Bloqueadoras:** A User Story não depende de outra (depende apenas da conclusão prévia da US01 para associar a fonte).
+* [ ] **Compreensão Validada com o Time:** A Equipe discutiu a história coletivamente e confirma entendimento comum do escopo.
+* [ ] **Estratégia de Testes Definida:** Os cenários de teste (unidade e, quando aplicável, integração) foram definidos previamente, alinhados à cobertura mínima exigida.
+
+**DoD - Definition of Done**
+* [ ] **Estrutura de Banco (Oracle):** Tabelas da Zona Bruta (Staging) criadas e implantadas na Oracle Cloud, preparadas para receber dados textuais e geometrias brutas (CLOB).
+* [ ] **Backend (Spring Boot):** APIs REST de upload de arquivos documentadas e integradas para iniciar processos.
+* [ ] **Frontend (Vue.js):** Tela de ingestão responsiva implementada, integrada com Axios para envio dos arquivos.
+* [ ] **Versionamento & Git:** Branch de funcionalidade (`feat/`) criada e Pull Request (PR) aberto e revisado por outro par.
+* [ ] **Qualidade de Código:** Código livre de fragmentos comentados.
+* [ ] **Cobertura de Testes:** Testes de unidade com cobertura mínima de 70% e testes de pipeline funcionando.
+
+---
+
+### US03 (Controle de Qualidade)
+**DoR - Definition of Ready**
+* [ ] **História Descrita:** A história tem um título claro e seu objetivo de negócio é plenamente compreendido.
+* [ ] **Critérios de Aceitação:** Todos os critérios de aceitação foram detalhados e acordados com o time.
+* [ ] **Insumos de Homologação:** Amostras de dados reais contendo registros válidos e registros com inconsistências (ex: CPF/CNPJ inválido, geometria corrompida) estão disponíveis para testes.
+* [ ] **Modelo de Dados:** O diagrama relacional da Zona Tratada está desenhado e homologado pelo DBA.
+* [ ] **Estimativa Realizada:** O esforço de desenvolvimento foi estimado e pontuado em Story Points pela equipe.
+* [ ] **Sem Dependências Bloqueadoras:** A User Story não depende de outra.
+* [ ] **Compreensão Validada com o Time:** A Equipe discutiu a história coletivamente e confirma entendimento comum do escopo.
+* [ ] **Estratégia de Testes Definida:** Os cenários de teste (unidade e, quando aplicável, integração) foram definidos previamente, alinhados à cobertura mínima exigida.
+
+**DoD - Definition of Done**
+* [ ] **Estrutura de Banco (Oracle):** Tabelas da Zona Tratada e Quarentena implantadas, com conversão para `SDO_GEOMETRY` (Oracle Spatial) e índices espaciais validados.
+* [ ] **Backend (Spring Boot):** APIs REST de consulta à quarentena documentadas e integradas ao banco.
+* [ ] **Frontend (Vue.js):** Tela para consultar registros rejeitados com seus respectivos motivos implementada.
+* [ ] **Versionamento & Git:** Branch de funcionalidade (`feat/`) criada e Pull Request (PR) aberto e revisado por outro par.
+* [ ] **Qualidade de Código:** Código livre de fragmentos comentados.
+* [ ] **Cobertura de Testes:** Testes de unidade com cobertura mínima de 70% e testes de pipeline funcionando.
+
+---
+
+### US04 (Monitoramento de Processamentos)
+**DoR - Definition of Ready**
+* [ ] **História Descrita:** A história tem um título claro e seu objetivo de negócio é plenamente compreendido.
+* [ ] **Critérios de Aceitação:** Todos os critérios de aceitação foram detalhados e acordados com o time.
+* [ ] **Insumos de Homologação:** Logs e status de execução estão acessíveis para mapeamento e integração.
+* [ ] **Modelo de Dados:** O modelo e a estrutura de leitura de logs para rastreamento de execuções estão validados com o DBA.
+* [ ] **Estimativa Realizada:** O esforço de desenvolvimento foi estimado e pontuado em Story Points pela equipe.
+* [ ] **Sem Dependências Bloqueadoras:** A User Story não depende de outra.
+* [ ] **Compreensão Validada com o Time:** A Equipe discutiu a história coletivamente e confirma entendimento comum do escopo.
+* [ ] **Estratégia de Testes Definida:** Os cenários de teste (unidade e, quando aplicável, integração) foram definidos previamente, alinhados à cobertura mínima exigida.
+
+**DoD - Definition of Done**
+* [ ] **Backend e Integração:** APIs REST documentadas consumindo os status, falhas e métricas do Apache Airflow.
+* [ ] **Frontend (Vue.js):** Tela de "Execuções do pipeline" implementada, exibindo o andamento das cargas, tempo de duração e registros rejeitados.
+* [ ] **Versionamento & Git:** Branch de funcionalidade (`feat/`) criada e Pull Request (PR) aberto e revisado por outro par.
+* [ ] **Qualidade de Código:** Código livre de fragmentos comentados.
+* [ ] **Cobertura de Testes:** Testes de unidade com cobertura mínima de 70% e testes de pipeline funcionando.
 
 ---
 
