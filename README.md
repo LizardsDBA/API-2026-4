@@ -97,7 +97,7 @@ Uma User Story só é considerada finalizada ("Pronta") se atender a todos os cr
 ---
 
 ## Vídeo de Apresentação
-*   **Link**: _a ser adicionado ao final da Sprint 3_
+*   **Link**: https://www.youtube.com/watch?v=E4sI7i-3si0
 
 ---
 
