@@ -29,7 +29,7 @@
 ---
 
 ## Burndown da Sprint 1 
-
+![Burndown da Sprint 1](../../../assets/Burndown.jpeg)
 ---
 
 ## DoR e DoD por User Story – Sprint 1
