@@ -1,0 +1,6 @@
+[submodule "datagis-backend"]
+	path = datagis-backend
+	url = https://github.com/LizardsDBA/datagis-backend.git
+[submodule "datagis-frontend"]
+	path = datagis-frontend
+	url = https://github.com/LizardsDBA/datagis-frontend.git
