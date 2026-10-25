@@ -29,7 +29,7 @@
 ---
 
 ## Burndown da Sprint 2 
-
+![Burndown da Sprint 2](../../../assets/burndown-sprint-2.jpeg)
 ---
 
 ## DoR e DoD por User Story – Sprint 2
