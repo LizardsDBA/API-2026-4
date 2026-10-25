@@ -89,9 +89,9 @@ Uma User Story só é considerada finalizada ("Pronta") se atender a todos os cr
 | :---: | :---: | :---: |
 | 🟢 **KICK-OFF GERAL** | 24/08 - 28/08 | [ Kick-off Geral ] |
 | 🟢 **CONSTRUÇÃO DO BACKLOG / PLANNING** | 31/08 - 04/09 | [ Planejamento ] |
-| 🔴 **SPRINT 1** | 07/09 - 27/09 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
-| 🔴 **SPRINT 1 REVIEW/PLANNING** | 28/09 - 02/10 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
-| 🔴 **SPRINT 2** | 05/10 - 25/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
+| 🟢 **SPRINT 1** | 07/09 - 27/09 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
+| 🟢 **SPRINT 1 REVIEW/PLANNING** | 28/09 - 02/10 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
+| 🟢 **SPRINT 2** | 05/10 - 25/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
 | 🔴 **SPRINT 2 REVIEW/PLANNING** | 26/10 - 30/10 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
 | 🔴 **SPRINT 3** | 02/11 - 22/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
 | 🔴 **SPRINT 3 REVIEW/PLANNING** | 23/11 - 27/11 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
