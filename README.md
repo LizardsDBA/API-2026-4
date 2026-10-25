@@ -56,6 +56,10 @@ A plataforma automatiza a ingestão de bases de dados geográficas e tabulares p
 
 ---
 
+## Documentação
+[Documentação das Sprints](./docs/processo/sprints/)
+
+
 ## DoR - Definition of Ready
 Para que uma User Story seja considerada pronta para desenvolvimento, ela deve cumprir o checklist acordado:
 * [ ] **História Descrita**: A história tem um título claro e seu objetivo de negócio é plenamente compreendido.
